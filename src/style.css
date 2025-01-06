@@ -1,3 +1,4 @@
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,6 +12,21 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* 
+Pine Green (#2D6A4F) – A forest-inspired green for main elements.
+Soft Olive (#B4C8A8) – A calming, earthy green for backgrounds or secondary elements.
+Dusty Rose (#D6A7A1) – A pastel rose color for small details, icons, or buttons.
+Goldenrod (#F6B800) – For call-to-action buttons or highlights that need attention.
+Light Birch (#E8E4D2) – For softer accents or background areas. 
+*/
+
+  --main-elements: #2d6a4f;
+  --backgrounds-secondaries:#b4c8a8;
+  --buttons-smalls: #d6a7a1;
+  --golden-call-to-actions: #f6b800;
+  --egg-softer-accents: #e8e4d2;
+
 }
 
 a {
@@ -25,7 +41,9 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
+  place-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -36,8 +54,11 @@ h1 {
 }
 
 #app {
+  display: flex;
+  flex-direction: column;
   max-width: 1280px;
   margin: 0 auto;
+  place-items: center;
   padding: 2rem;
   text-align: center;
 }
@@ -63,6 +84,10 @@ h1 {
   color: #888;
 }
 
+.gotomap-btn {
+  width: fit-content;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -70,9 +95,11 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #bc3939;
+  /* background-color: #bc3939; */
   cursor: pointer;
   transition: border-color 0.25s;
+  background-color: var(--buttons-smalls);
+  color:white;
 }
 button:hover {
   border-color: #646cff;
@@ -93,6 +120,10 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9;  */
   }
 }
+
+
+
+/*  */
