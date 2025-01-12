@@ -86,6 +86,7 @@ h1 {
 
 .gotomap-btn {
   width: fit-content;
+  height: fit-content;
 }
 
 .btn {
@@ -125,5 +126,25 @@ button:focus-visible {
 
 
 
-/*  */
-#map { width: 1000px; height: 700px; }
+#map { 
+  width: 90%; 
+  height: 70vh;
+  margin: 70px 0;
+}
+
+
+.map-btns {
+  display:flex;
+}
+
+.test {
+  display:flex;
+}
+
+.nav {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
